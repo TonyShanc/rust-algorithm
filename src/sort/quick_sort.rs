@@ -18,8 +18,8 @@ pub fn partition<T: PartialOrd>(arr: &mut [T], low: isize, high: isize) -> isize
             arr.swap(i as usize, j as usize)
         }
     }
-    arr.swap(i as usize, pivot as usize);
-    i
+    arr.swap(j as usize, pivot as usize);
+    j
 }
 
 fn _quick_sort<T: Ord>(arr: &mut [T], low: isize, high: isize) {
